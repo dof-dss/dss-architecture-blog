@@ -1,0 +1,9 @@
+<div id="header" class="header">
+  <div class="organisation_name"><%= config[:settings]["organisation_name"] %></div>
+  <% config[:settings]["header_links"].each do |name, href| %>
+    <%= link_to name, href %>
+  <% end %>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>

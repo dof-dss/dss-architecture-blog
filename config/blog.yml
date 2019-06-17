@@ -1,0 +1,10 @@
+# Organisation name to show on left-hand-side of header
+organisation_name: Digital Development
+
+# Blog title
+blog_title: Architecture Blog
+
+# Links to show on right-hand-side of header
+header_links:
+  Enterprise Architecture: https://nics-ea-docs.london.cloudapps.digital
+  Citizen Services Architecture: https://nics-ea.london.cloudapps.digital

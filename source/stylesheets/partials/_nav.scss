@@ -1,0 +1,16 @@
+nav {
+  border-bottom: 1px solid $base-border-color;
+  margin-bottom: 1em;
+
+  ul {
+    display: inline-block;
+    margin-bottom: em(10);
+  }
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 700;
+  letterspacing: 4px;
+  text-transform: uppercase;
+}
