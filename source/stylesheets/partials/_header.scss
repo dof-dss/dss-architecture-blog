@@ -7,12 +7,19 @@
   overflow: hidden;
 }
 
-.header .organisation_name {
+.header .header_container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55em;
+}
+
+.header .header_container .organisation_name {
   float: left;
   display: block;
   color: inherit;
   padding: 0.5em 0.6em;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 
 .header a {
@@ -48,7 +55,7 @@
 
 /*
   When the screen is less than 600 pixels wide, hide all links.
-  Show the link that contains should open and close the header (.icon)
+  Show the link that should open and close the header (.icon)
 */
 @media screen and (max-width: 600px) {
   .header a:not(:last-child){display: none;}

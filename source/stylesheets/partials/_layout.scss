@@ -2,8 +2,8 @@
   @include grid-container;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60em;
-  padding: 2em;
+  max-width: 55em;
+  padding: 2em 0;
 }
 
 .main {
@@ -34,20 +34,12 @@ ol {
 }
 
 .large-column {
-  @include grid-column(8);
+  @include grid-column(9);
   margin-left: 0;
+  margin-right: 2em;
 }
 
 .small-column {
-  @include grid-column(4);
+  @include grid-column(3);
   margin-left: 0;
-}
-
-ul {
-  li {
-    h2 {
-      margin-top: 0.8em;
-      margin-bottom: 0.2em;
-    }
-  }
 }

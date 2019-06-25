@@ -17,3 +17,18 @@ dt {
 dd {
   margin: 0;
 }
+
+ul {
+  li {
+    h2 {
+      margin-top: 0.8em;
+      margin-bottom: 0.2em;
+    }
+  }
+
+  li:first-child {
+    h2 {
+      margin-top: 0;
+    }
+  }
+}

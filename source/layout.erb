@@ -11,7 +11,7 @@
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "all" %>
 
-    <title><%= current_page.data.blog_title %><%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title><%= config[:settings]["blog_title"] %><%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
@@ -19,8 +19,13 @@
     <%= partial "partials/header" %>
     <div class="main" role="main">
       <%= partial "partials/nav" %>
-      <%= yield %>
-      <%= partial "partials/footer" %>
+      <div class="large-column">
+        <%= yield %>
+      </div>
+      <div class="small-column">
+        <%= partial "partials/panel" %>
+      </div>
     </div>
+    <%= partial "partials/footer" %>
   </body>
 </html>
